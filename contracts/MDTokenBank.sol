@@ -19,7 +19,7 @@ contract MDTokenBank is ERC677Receiver, Ownable {
     function MDTokenBank(address _tokenAddress, uint8 _secretAscii) public {
         tokenAddress = _tokenAddress;
         secretAscii = _secretAscii;
-    }
+    } 
 
     function setSecretAscii(uint8 _secretAscii) public onlyOwner {
         secretAscii = _secretAscii;
